@@ -1,3 +1,9 @@
+# [v0.3.4] (2026-04-05 12:12:43)
+
+Changes:
+1. generateOtp(), getUser(), addUser() - methodlar olib tashlandi, bu methodlar murojaat qiladigan endpointlar backend orqali kms-server bilan amalga oshiriladi.
+
+
 # [v0.3.3] (2026-02-03 17:12:34)
 
 Changes:
@@ -6,4 +12,3 @@ Changes:
 3. changePin() qilinayotganda ham, agar pin code ketma-ket maxTryLimitPin marta xato kiritilsa, cert revoke qilinadi va localdan o'chiriladi, har xato kiritilganda, PinCodeMismatchException xatolik qaytadi. Agar limitga yetsa, CertificateRevokedException qaytaradi.
 4. deleteCertificate() va clearCertificates() methodlarida certificateni revoke qilish uchun request junatildi.
 5. addCertificate(userId, dboUserId) - dboUserId qoshildi, inn/pinfl birxil, faqat dboUserId orqali farqlash kerak bolganda, keyin getCertificateByDboUserId() methodda osha dboUserId orqali olib, uni serialNumberi orqali sign(serialNumber) methodda imzo qoyish mumkin boladi.
-
