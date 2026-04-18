@@ -1,3 +1,9 @@
+# [v1.1.7] (2026-04-18 12:12:43)
+
+Changes:
+1. generateOtp(), getUser(), addUser() - methodlar olib tashlandi, bu methodlar murojaat qiladigan endpointlar backend orqali kms-server bilan amalga oshiriladi.
+
+
 # [v1.1.6] (2026-02-03 17:12:34)
 
 Changes:
